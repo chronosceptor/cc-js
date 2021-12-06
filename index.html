@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crypto</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="p-10 bg-red-100">
+
+
+    <div class="bg-blue-500 p-10 w-64">
+        <div class="flex">
+            <input id="qty" name="qty" type="text" class="w-32" value="1">
+            <div id="topWrap">
+                <select id="cryptoSelect" name="cryptoSelect" class="mb-5">
+                    <option value="17.80">XRP</option>
+                    <option value="1101577.18">BTC</option>
+                    <option value="93435.41">ETH</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button id="typeBtn" type="button" class="my-5">></button>
+        </div>
+
+        <div class="flex">
+            <div id="result" class="w-32 h-8 bg-gray-300"></div>
+            <div id="bottomWrap">
+                <select id="fiatSelect" name="fiatSelect" class="mb-5">
+                    <option value="1">MXN</option>
+                    <option value=".047">USD</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
